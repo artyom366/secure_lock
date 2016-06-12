@@ -26,4 +26,9 @@ public class TextFieldComponent {
     public void setTextFieldReadonly(final boolean isReadonly) {
         this.textField.setDisable(isReadonly);
     }
+
+    public String appendTextFieldText(final String text) {
+        this.textField.appendText(text);
+        return this.textField.getText();
+    }
 }
