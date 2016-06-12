@@ -31,4 +31,21 @@ public class TextFieldComponent {
         this.textField.appendText(text);
         return this.textField.getText();
     }
+
+    public int getScreenCapacity() {
+        return this.textField.getText().length();
+    }
+
+    public String deleteTextFieldText() {
+        this.textField.deleteText(textField.getText().length() - 1, textField.getText().length());
+        return this.textField.getText();
+    }
+
+    public String getTextFieldText() {
+        return this.textField.getText();
+    }
+
+    public void  setTextFieldText(final String text) {
+        this.textField.setText(text);
+    }
 }

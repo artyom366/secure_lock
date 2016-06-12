@@ -57,4 +57,8 @@ public class TableComponent<UserData> {
         tableView.getItems().clear();
     }
 
+    public ObservableList<UserData> getData() {
+        return tableView.getItems();
+    }
+
 }

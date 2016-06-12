@@ -33,4 +33,14 @@ public class ButtonComponent {
     public void addAction(EventHandler<ActionEvent> event) {
         button.setOnAction(event);
     }
+
+    public void setButtonStyleActive() {
+        this.button.setStyle("");
+        this.button.setDisable(false);
+    }
+
+    public void setButtonStyleDisabled() {
+        this.button.setStyle("");
+        this.button.setDisable(true);
+    }
 }
